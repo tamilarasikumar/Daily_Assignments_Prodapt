@@ -24,8 +24,20 @@ if val3:
     print("email id accepted",emailId)
 else:
     print("invalid email.id",emailId)
-# print("your name is ",name)
-# print("Your phone No. is ",mobile)
-# print("Your pin code is ",pincode)
-# print('your address is ',address)
-# print('Your email ID is ',emailId)
+
+if nam and val1 and val2 and val3 == True:
+    print("your name is ",name)
+    print("Your phone No. is ",mobile)
+    print("Your pin code is ",pincode)
+    print('your address is ',address)
+    print('Your email ID is ',emailId)
+else:
+    if (nam == False):
+        print("You enter the wrong input",nam)
+    if(val1 == False):
+        print("You enter the wrong input",val1)
+    if(val2 == False):
+        print("You enter the wrong input",val2)
+    if(val3 == False):
+        print('You enter the wrong input',val3)
+    
