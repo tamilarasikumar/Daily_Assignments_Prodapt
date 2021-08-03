@@ -1,0 +1,12 @@
+WARNING:root:excepted value is in integer
+ERROR:root:an unknown error happened
+CRITICAL:root:critical error
+INFO:root:Normal message
+DEBUG:root:for developers
+INFO:root:30
+INFO:root:30
+WARNING:root:excepted value is in integer
+ERROR:root:an unknown error happened
+CRITICAL:root:critical error
+INFO:root:Normal message
+DEBUG:root:for developers
