@@ -23,6 +23,14 @@ while(True):
         hindi=int(input("enter hindi marks:"))
         maths=int(input("enter maths marks:"))
         english=int(input("enter english marks:"))
+        def val(name,rollno,admino):
+            valn=re.search("^[A-Z]",name)
+            valr=re.search('^[1-9]',rollno)
+            vala=re.search('^[0-9]',admino)
+            if valn and valr and vala:
+                return True
+            else:
+                return False
         obj1.addstudent(name,rollno,admino,hindi,english,maths)
 
     if choice==2:
