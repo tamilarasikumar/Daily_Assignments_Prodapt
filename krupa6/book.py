@@ -1,6 +1,7 @@
 import re,logging
 
 booklist=[]
+logging.basicConfig(filename='bookfile.log',level=logging.DEBUG)
 try:
     class book:   
         def addbook(self,title,description,price,distributer,publisher):
@@ -51,7 +52,7 @@ try:
 
         if choice==5:
             break
-
+        logging.debug("completed")
 except Exception:
     logging.error("wrong")
 finally:
