@@ -1,0 +1,4 @@
+name,age,mbl_no,mail_id,gender,address,proof_name,proof_no,slot_date,vaccine_count,vaccine_name,vaccinated_by,vaccinated_place
+Selva,18,919944522034,selvatamilkumar05@gmail.com,Male,Cuddalore,Aadhar,9876 8765 4567,24.04.2021,5,Covidshield,Selvi,Cuddalore
+Swe,20,919765423456,tamiarasiifetdapper@gmail.com,Female,Cuddalore,Aadhar,9876 5432 6789,06.09.2020,1,Covidshield,Selvi,Cuddalore
+Sharmi,21,919876554321,tamilarasiifet@gmail.com,Female,Cuddalore,Aadhar,6789 4567 8765,09.08.2021,1,Covidsield,Selvi,Cuddalore
