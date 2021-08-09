@@ -25,13 +25,13 @@ try:
             self.cindate=input("\nEnter your check in date:")
             self.coutdate=input("\nEnter your checkout date:")
             print("Your room no.:",self.rno,"\n")
-
-        def inputdata(self):
-            self.name=input("\nEnter your Fullname:")
-            self.address=input("\nEnter your address:")
-            self.cindate=input("\nEnter your check in date:")
-            self.coutdate=input("\nEnter your checkout date:")
-            print("Your room no.:",self.rno,"\n")
+            def val(name,adress):
+                val1=re.search("^[a-z]",name)
+                val2=re.search("^[A-Z",adress)
+                if val1 and val2:
+                    return True
+                else:
+                    return False
 
         def roomrent(self):
 
