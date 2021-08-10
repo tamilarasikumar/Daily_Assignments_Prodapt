@@ -13,8 +13,9 @@ while(1):
     print("1.add participant:")
     print("2.view participant:")
     print("3.search participant:")
-    print("4.update participant")
-    print("5.exit")   
+    print("4.delete participant")
+    print("5.update participant")
+    print("6.exit")   
         
     choice=int(input("enter your choice:"))
 
@@ -35,7 +36,7 @@ while(1):
         if choice==2:
             result=collection_name.find()
             for i in result:
-                productlist.append(i)
+                participants_list.append(i)
                 print(i)
 
         
@@ -44,13 +45,16 @@ while(1):
         k=collection_name.find({"roll":n})
         for i in k:
             print(i)
-
     if choice==4:
+        pname=input("enter the name:")
+        result=collection_name.delete_one({"name":pname})
+        print(result.deleted_count)
+    if choice==5:
         pnames=input("enter the participant name you have to update:")
         prollno=input("enter rollno:")
-        pcollege=input("enter the wholesale price:")
+        pcollege=input("enter the college:")
         result=collection_name.update_one({"name":pnames},{"$set":{"roll":prollno,"college":pcollege}})
         print(result)
             
-    if choice==5:
+    if choice==6:
         break 
